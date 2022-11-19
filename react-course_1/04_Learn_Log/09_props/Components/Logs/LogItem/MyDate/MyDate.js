@@ -1,0 +1,15 @@
+import React from "react";
+import "./MyDate.css";
+
+const MyDate = (props) => {
+  const day = props.date.getDate();
+  const month = props.date.toLocal;
+  return (
+    <div className="date">
+      <div className="month">{month}</div>
+      <div className="day">{day}</div>
+    </div>
+  );
+};
+
+export default MyDate;
